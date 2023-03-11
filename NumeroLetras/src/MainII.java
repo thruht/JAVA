@@ -19,7 +19,7 @@ public  class MainII {
                 if (deci==0 && uni!=0) {
                     System.out.print(centii[1]);
                     nombre(uni);
-                }else {
+                } if (deci ==0 && uni==0){
                     System.out.print(centii[0]);
                 }
                 break;
@@ -238,31 +238,32 @@ public  class MainII {
     }
         public static void descomponer(int num0)
         {
+            if (num0<0){
+                num0=num0*-1;
+                System.out.print("-");
+                System.out.print(num0+": Menos ");
+            }else {System.out.print(num0+": " );}
+
             int unidades = num0 % 10;
             int decenas = ( num0 / 10 ) % 10;
             int centenas = ( num0/100 ) % 10;
 
             if (num0 <10) {
-                System.out.print(num0+": " );
                 nombre(unidades);
             }
             if (num0<100 && num0>9 ) {
                 if ( num0 % 10==0 | (num0 <=15 && num0 % 10 <6 ) )
                 {
-                    System.out.print(num0+": " );
                     nombre(num0);
                 }else {
-                    System.out.print(num0+": " );
-                    nombreii(decenas, unidades);
+                    nombreii(decenas,unidades);
                 }
             }
             if (num0<=999 && num0>=100 ){
                 if ( unidades==0 && decenas==0)
                 {
-                    System.out.print(num0+": ");
                     nombreiii((centenas),0,0);
                 }else {
-                    System.out.print(num0+": " );
                     nombreiii(centenas,decenas,unidades);
                 }
             }
