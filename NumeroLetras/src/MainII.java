@@ -3,59 +3,122 @@ import java.util.Scanner;
 public  class MainII {
     public static void nombreiii(int centi,int deci, int uni){
 
-        String[] centii={"cien","ciento","Docientos","Trecientos","Cuatrocientos","Quinientos","Seisientos","Setecientos","Ochocientos","novecientos"};
+        String[] centii={"cien","ciento","Docientos","Trecientos","Cuatrocientos",
+                "Quinientos","Seisientos","Setecientos","Ochocientos","novecientos"};
         switch (centi)
         {
-            case 0:
-//                System.out.println(" "+decii[0]);
-                break;
             case 1:
-                System.out.print(centii[1]);
-                nombreii(deci,uni);
+                if (deci !=0 && uni!=0){
+                    System.out.print(centii[1]);
+                    nombreii(deci,uni);
+                }
+                if (deci >0 && uni==0) {
+                    System.out.print(centii[1]);
+                    nombre(deci*10);
+                }
+                if (deci==0 && uni!=0) {
+                    System.out.print(centii[1]);
+                    nombre(uni);
+                }else {
+                    System.out.print(centii[0]);
+                }
                 break;
             case 2:
                 System.out.print(centii[2]);
-                nombreii(deci,uni);
+                if (deci!=0 && uni!=0){
+                nombreii(deci,uni);}
+                if (deci >0 && uni==0) {
+                    nombre(deci*10);
+                }
+                if (deci==0 && uni!=0)
+                {nombre(uni);
+                }
                 break;
             case 3:
                 System.out.print(centii[3]);
-                nombreii(deci,uni);
+                if (deci!=0 && uni!=0){
+                    nombreii(deci,uni);}
+                if (deci >0 && uni==0) {
+                    nombre(deci*10);
+                }
+                if (deci==0 && uni!=0)
+                {nombre(uni);
+                }
                 break;
             case 4:
                 System.out.print(centii[4]);
-                nombreii(deci,uni);
+                if (deci!=0 && uni!=0){
+                    nombreii(deci,uni);}
+                if (deci >0 && uni==0) {
+                    nombre(deci*10);
+                }
+                if (deci==0 && uni!=0)
+                {nombre(uni);
+                }
                 break;
             case 5:
                 System.out.print(centii[5]);
-                nombreii(deci,uni);
+                if (deci!=0 && uni!=0){
+                    nombreii(deci,uni);}
+                if (deci >0 && uni==0) {
+                    nombre(deci*10);
+                }
+                if (deci==0 && uni!=0)
+                {nombre(uni);
+                }
                 break;
             case 6:
                 System.out.print(centii[6]);
-                nombreii(deci,uni);
+                if (deci!=0 && uni!=0){
+                    nombreii(deci,uni);}
+                if (deci >0 && uni==0) {
+                    nombre(deci*10);
+                }
+                if (deci==0 && uni!=0)
+                {nombre(uni);
+                }
                 break;
             case 7:
                 System.out.print(centii[7]);
-                nombreii(deci,uni);
+                if (deci!=0 && uni!=0){
+                    nombreii(deci,uni);}
+                if (deci >0 && uni==0) {
+                    nombre(deci*10);
+                }
+                if (deci==0 && uni!=0)
+                {nombre(uni);
+                }
                 break;
             case 8:
                 System.out.print(centii[8]);
-                nombreii(deci,uni);
+                if (deci!=0 && uni!=0){
+                    nombreii(deci,uni);}
+                if (deci >0 && uni==0) {
+                    nombre(deci*10);
+                }
+                if (deci==0 && uni!=0)
+                {nombre(uni);
+                }
                 break;
             case 9:
                 System.out.print(centii[9]);
-                nombreii(deci,uni);
+                if (deci!=0 && uni!=0){
+                    nombreii(deci,uni);}
+                if (deci >0 && uni==0) {
+                    nombre(deci*10);
+                }
+                if (deci==0 && uni!=0)
+                {nombre(uni);
+                }
                 break;
         }
     }
     public static void nombreii(int dece,int uni){
 
-        String[] decii={"Veinte","Veinti","Treinta","treintai","Cuarenta","cuarentai","cincuenta","Cincuentai","Sesenta","Sesentai","Ochenta","Ochentai","Noventa","Noventai",};
+        String[] decii={"dieci","Veinti","treintai","cuarentai","Cincuentai","Sesentai","Setentai","Ochentai","Noventai"};
         switch (dece){
-            case 0:
-                System.out.println(decii[0]);
-                break;
             case 1:
-                System.out.print(decii[1]);
+                System.out.print(decii[0]);
                 nombre(uni);
                 break;
             case 2:
@@ -63,12 +126,40 @@ public  class MainII {
                 nombre(uni);
                 break;
             case 3:
-                System.out.println("20-"+decii[4]);
+                System.out.print(decii[2]);
+                nombre(uni);
+                break;
+            case 4:
+                System.out.print(decii[3]);
+                nombre(uni);
+                break;
+            case 5:
+                System.out.print(decii[4]);
+                nombre(uni);
+                break;
+            case 6:
+                System.out.print(decii[5]);
+                nombre(uni);
+                break;
+            case 7:
+                System.out.print(decii[6]);
+                nombre(uni);
+                break;
+            case 8:
+                System.out.print(decii[7]);
+                nombre(uni);
+                break;
+            case 9:
+                System.out.print(decii[8]);
+                nombre(uni);
                 break;
         }
     }
     public static void nombre(int uni){
-        String[] unii={"Cero","Uno","Dos","Tres","Cuatro","Cinco","Seis","Siete","Ocho","Nueve","Dies","Once","Doce","Trece","Catorce","Quince"};
+        String[] unii={"Cero","Uno","Dos","Tres","Cuatro","Cinco"
+                ,"Seis","Siete","Ocho","Nueve","Dies","Once",
+                "Doce","Trece","Catorce","Quince","veinte",
+                "Treinta","cuarenta","Cincuenta","Sesenta","Setenta","Ochenta","Noventa"};
         switch (uni){
             case 0:
                 System.out.println(unii[0]);
@@ -112,15 +203,39 @@ public  class MainII {
             case 13:
                 System.out.println(unii[13]);
                 break;
-
+            case 14:
+                System.out.println(unii[14]);
+                break;
             case 15:
                 System.out.println(unii[15]);
+                break;
+            case 20:
+                System.out.println(unii[16]);
+                break;
+            case 30:
+                System.out.println(unii[17]);
+                break;
+            case 40:
+                System.out.println(unii[18]);
+                break;
+            case 50:
+                System.out.println(unii[19]);
+                break;
+            case 60:
+                System.out.println(unii[20]);
+                break;
+            case 70:
+                System.out.println(unii[21]);
+                break;
+            case 80:
+                System.out.println(unii[22]);
+                break;
+            case 90:
+                System.out.println(unii[23]);
                 break;
 
         }
     }
-
-
         public static void descomponer(int num0)
         {
             int unidades = num0 % 10;
@@ -132,7 +247,7 @@ public  class MainII {
                 nombre(unidades);
             }
             if (num0<100 && num0>9 ) {
-                if (num0==10 | num0 ==11 | num0 ==12 |num0 ==13 | num0==14 | num0 ==15)
+                if ( num0 % 10==0 | (num0 <=15 && num0 % 10 <6 ) )
                 {
                     System.out.print(num0+": " );
                     nombre(num0);
@@ -140,12 +255,16 @@ public  class MainII {
                     System.out.print(num0+": " );
                     nombreii(decenas, unidades);
                 }
-
-
             }
-            if (num0<999 && num0>100 ){
-                System.out.print(num0+": ");
-                nombreiii(centenas,decenas,unidades);
+            if (num0<=999 && num0>=100 ){
+                if ( unidades==0 && decenas==0)
+                {
+                    System.out.print(num0+": ");
+                    nombreiii((centenas),0,0);
+                }else {
+                    System.out.print(num0+": " );
+                    nombreiii(centenas,decenas,unidades);
+                }
             }
         }
         public static void menu()
