@@ -8,7 +8,6 @@ public  class Main {
                 System.out.println(dece+"- Uno");
                 break;
         }
-
     }
     public static void nombre(int uni){
         String[] unii={"Cero","Uno","Dos","Tres","Cuatro","Cinco","Seis","Siete","Ocho","Nueve"};
@@ -26,10 +25,7 @@ public  class Main {
             D=uni;
 
         }
-
 //        do {
-
-
             switch (uni){
                 case 0:
                     System.out.println("0-"+unii[0]);
@@ -69,12 +65,7 @@ public  class Main {
                     System.out.println(uni+"- Nueve");
                     break;
             }
-
-
  //       }while (cont<4);
-
-
-
     }
     public static void Descomponer(int num)
     {
