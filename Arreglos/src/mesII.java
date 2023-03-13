@@ -61,8 +61,8 @@ public class mesII {
         }while (num1 != 0);
 
     }
-    // Función para obtener el nombre de un mes dado su número (1 = Enero, 2 = Febrero, etc.)
     public static String obtenerNombreMes(int mes) {
+        // Función para obtener el nombre de un mes dado su número (1 = Enero, 2 = Febrero, etc.)
         switch (mes) {
             case 1:
                 return "Enero";
